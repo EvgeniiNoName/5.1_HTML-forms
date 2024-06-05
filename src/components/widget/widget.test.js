@@ -11,12 +11,11 @@ document.body.innerHTML = `
 describe('ButtonWithPopover', () => {
   let button;
   let popover;
-
-  beforeEach(() => {
-    new ButtonWithPopover();
-    button = document.getElementById('Button_main');
-    popover = document.getElementById('popover');
-  });
+  const widget = new ButtonWithPopover();
+  widget.initialize()
+  button = document.getElementById('Button_main');
+  popover = document.getElementById('popover');
+  
 
   test('поповер должен быть скрыт изначально', () => {
     const displayStyle = window.getComputedStyle(popover).display;
