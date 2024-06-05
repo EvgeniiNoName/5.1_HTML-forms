@@ -2,7 +2,7 @@ import { ButtonWithPopover } from './widget.js';
 
 document.body.innerHTML = `
   <button id="Button_main" class="button_main">Click me</button>
-  <div id="popover" class="popover">
+  <div id="popover" class="popover" style="display: none">
     <div class="popover-header">Popover Header</div>
     <div class="popover-body">Popover Body</div>
   </div>
